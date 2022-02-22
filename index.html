@@ -56,7 +56,13 @@
                         </ul>
                     </nav>
                     <button class="header__button ff-baloo-600 header__button--right">
-                        Create a wheel
+                        <span>Create a wheel</span>
+                        <div class="lds-ring button__loader">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </button>
                 </div>
             </div>
@@ -129,7 +135,14 @@
                 <div class="col-6">
                     <button class="main__button main__button-mb" id="start-btn">
                         <span class="ff-baloo-600 text-uppercase">start</span>
-                        <img src="images/btn-loader.svg" alt="Load" class="btn__load-img">
+
+                        <div class="lds-ring button__loader">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
                     </button>
                 </div>
             </div>
@@ -172,7 +185,18 @@
                 <p class="modal-description ff-roboto-normal">
                     Another spin will be available tomorrow. Don't forget to write to me ;)
                 </p>
-                <button type="button" class="main__button modal__btn ff-baloo-600" data-bs-dismiss="modal">Ok</button>
+
+                <button class="main__button main__button-mb ff-baloo-600 modal__btn" data-bs-dismiss="modal">
+                    <span class="ff-baloo-600">Ok</span>
+
+                    <div class="lds-ring button__loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </button>
             </div>
         </div>
     </div>

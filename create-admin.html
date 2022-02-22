@@ -54,7 +54,13 @@
                         </ul>
                     </nav>
                     <button class="header__button ff-baloo-600 header__button--right">
-                        Create a wheel
+                        <span>Create a wheel</span>
+                        <div class="lds-ring button__loader">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </button>
                 </div>
             </div>
@@ -272,7 +278,7 @@
 <div class="modal" tabindex="-1" id="modal">
     <div class="modal-dialog modal-dialog-centered justify-content-center">
         <div class="modal-content modal-bg modal__link-size">
-            <div class="modal-body text-center d-flex flex-column align-items-center justify-content-center">
+            <div class="modal-body modal-body-save-link text-center d-flex flex-column align-items-center justify-content-center">
                 <h5 class="modal-title modal-title-link ff-roboto-500">
                     Congratulations!
                 </h5>
@@ -293,7 +299,16 @@
                     </div>
                 </div>
 
-                <button type="button" class="main__button modal__btn ff-baloo-600" data-bs-dismiss="modal">Save Link
+                <button class="main__button main__button-mb ff-baloo-600 modal__btn" data-bs-dismiss="modal">
+                    <span class="ff-baloo-600">Save Link</span>
+
+                    <div class="lds-ring button__loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
                 </button>
             </div>
         </div>

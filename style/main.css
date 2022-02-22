@@ -134,6 +134,21 @@ a:hover, a:active {
     color: white;
     border: none;
     padding: 5px 11px;
+    line-height: 19px;
+    font-size: 12px;
+    min-height: 30px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__button.load {
+    padding: 5px 11px;
+}
+
+.header__button.load span {
+    display: none;
 }
 
 .header__button:hover {
@@ -145,6 +160,8 @@ a:hover, a:active {
 @media (min-width: 768px) {
     .header__button {
         font-size: 16px;
+        min-height: 41px;
+        min-width: 158px;
     }
 }
 
@@ -533,8 +550,22 @@ a.menu__item__link {
     display: none;
 }
 
-.main__button.load .btn__load-img {
+button.load .button__loader {
     display: block;
+}
+
+button .button__loader div {
+    width: 24px;
+    height: 24px;
+    border: 3px solid white;
+    border-color: white transparent transparent transparent;
+    margin: 0;
+}
+
+button .button__loader {
+    width: 24px;
+    height: 24px;
+    margin: 0;
 }
 
 
@@ -661,8 +692,18 @@ a.menu__item__link {
     height: 319px;
 }
 
+@media (min-width: 768px) {
+    .modal-bg{
+        width: 437px;
+        height: 440px;
+    }
+}
+
 .modal-body {
-    padding: 36px 30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-title {
@@ -671,10 +712,26 @@ a.menu__item__link {
     margin-bottom: 12px;
 }
 
+@media (min-width: 768px) {
+    .modal-title {
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 17px;
+    }
+}
+
 .modal-subtitle {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .modal-subtitle {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 23px;
+    }
 }
 
 .prize__name {
@@ -684,10 +741,26 @@ a.menu__item__link {
     padding: 9px 22px;
 }
 
+@media (min-width: 768px) {
+    .prize__name {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 18px 65px;
+    }
+}
+
 .modal-description {
     margin: 27px 0 23px 0;
     font-size: 14px;
     line-height: 16px;
+}
+
+@media (min-width: 768px) {
+    .modal-description {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 24px 0 36px 0;
+    }
 }
 
 /*  </ Модальное окно  > */
@@ -833,8 +906,24 @@ li.segments__item:hover .segments__item-text {
     height: 260px;
 }
 
+
+@media (min-width: 768px) {
+    .modal__link-size {
+        width: 437px;
+        height: 399px;
+    }
+}
+
 .modal-title-link {
     margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .modal-title-link {
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 37px;
+    }
 }
 
 .link__block {
@@ -843,12 +932,30 @@ li.segments__item:hover .segments__item-text {
     position: relative;
     border-radius: 10px;
     padding: 13px 20px 16px 20px;
-    width: 200px;
-    height: 45px;
+
+}
+
+@media (min-width: 768px) {
+    .link__block {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 18px 48px;
+        padding: 18px 48px;
+    }
 }
 
 .modal-body .link__block-mb {
     margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .modal-body .link__block-mb {
+        margin-bottom: 40px;
+    }
+}
+
+.modal-body-save-link .modal__btn {
+    padding: 14px 44px;
 }
 
 .link__block .link__text {
@@ -866,6 +973,25 @@ li.segments__item:hover .segments__item-text {
 .link__block .saved__block .saved__img-block {
     width: 13px;
     height: 13px;
+}
+
+.saved__img-block .saved__img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .link__block .saved__block .saved__img-block {
+        width: 13px;
+        height: 13px;
+    }
+}
+
+@media (min-width: 768px) {
+    .link__copy-block-img {
+        width: 21px;
+        height: 15px;
+    }
 }
 
 
@@ -892,6 +1018,16 @@ li.segments__item:hover .segments__item-text {
     top: -30px;
     right: 0;
     z-index: 1;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@media (min-width: 768px) {
+    .saved__block {
+        padding: 10px 17px 10px 17px;
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 
 .saved__block-show {
@@ -906,6 +1042,7 @@ li.segments__item:hover .segments__item-text {
 .saved__block .saved__img-block {
 
 }
+
 
 /* / Модальное окно */
 
