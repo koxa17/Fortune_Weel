@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    сброс стилей-->
+    <link rel="stylesheet" href="style/normalize.css">
+    <!--    Гугл шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style/main.css">
+    <title>Fortune Weel</title>
+</head>
+<!--TODO Для показа модалки тегу body добвить класс modal-open и вызвать функию modal.show()-->
+<body class="ff-baloo-normal">
+<div class="overlay-main"></div>
+
+
+<header class="header">
+    <div class="container header__container">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center">
+                <div class="burger__menu burger__menu--mr">
+                    <div class="burger__menu__line burger__line_top burger__line-none"></div>
+                    <div class="burger__menu__line burger__line_first"></div>
+                    <div class="burger__menu__line burger__line_second"></div>
+                    <div class="burger__menu__line burger__line_bottom burger__line-none"></div>
+                </div>
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="Fortune Weel" class="logo__img">
+                    </a>
+                </div>
+
+                <button class="header__button ff-baloo-600 header__button--right">
+                    Create a wheel
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--TODO Для показа загрузки блоку main обаить класс load-->
+<main class="main text-center create">
+    <div class="main__bg main__bg-left"></div>
+    <div class="main__bg main__bg-right"></div>
+    <div class="loader">
+        <img src="images/btn-loader.svg" alt="Load" class="loader-img">
+    </div>
+
+
+    <div class="overlay-main"></div>
+
+    <div class="menu">
+        <div class="close-btn-menu text-end">
+            <img src="images/menu-icon/cross-circle.svg" alt="Close" class="close-btn-menu__img img-icon">
+        </div>
+
+        <nav>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <img src="images/menu-icon/info.svg" alt="" class="menu__item__img">
+                    <a href="about.html" class="menu__item__link ff-baloo-normal">About</a>
+                </li>
+                <li class="menu__item">
+                    <img src="images/menu-icon/comments.svg" alt="" class="menu__item__img">
+                    <a href="fq.html" class="menu__item__link ff-baloo-normal">F&Q</a>
+                </li>
+                <li class="menu__item">
+                    <img src="images/menu-icon/star.svg" alt="" class="menu__item__img">
+                    <a href="create.html" class="menu__item__link ff-baloo-normal">Created wheels</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrapper-content create-content">
+        <div class="container relative z-index create__container-padding">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="create-title ff-baloo-normal">Create your own wheel</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <div class="segments__block segments__block-mb">
+                        <ul class="segments__list ff-roboto-normal">
+                            <li class="segments__item">
+                                <div class="segments__item-number">
+                                    1
+                                </div>
+                                <div class="segments__item-text">Title title title</div>
+                            </li>
+                            <li class="segments__item">
+                                <div class="segments__item-number">
+                                    2
+                                </div>
+                                <div class="segments__item-text">Title title title</div>
+                            </li>
+                            <li class="segments__item">
+                                <div class="segments__item-number">
+                                    3
+                                </div>
+                                <div class="segments__item-text">Title title title</div>
+                            </li>
+                            <li class="segments__item">
+                                <div class="segments__item-number">
+                                    4
+                                </div>
+                                <div class="segments__item-text">Title title title</div>
+                            </li>
+                            <li class="segments__item">
+                                <div class="segments__item-number">
+                                    5
+                                </div>
+                                <div class="segments__item-text">Title title title</div>
+                            </li>
+                            <li class="segments__item">
+                                <div class="segments__item-number">
+                                    6
+                                </div>
+                                <div class="segments__item-text">Title title title</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <button class="main__button create__add-btn" >
+                        <span class="ff-roboto-600">+Add</span>
+                        <img src="images/btn-loader.svg" alt="Load" class="btn__load-img">
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <input type="text" class="number__spins number__spins-margin ff-roboto-800" placeholder="20" />
+                    <div class="number__spins-text ff-roboto-normal">
+                        Number of spins
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-12">
+                    <div class="wheel__block">
+                        <div class="wheel__border-circle"></div>
+                        <div class="wheel__prize-pointer">
+                            <img src="images/polygon.png" alt="" class="wheel__prize-pointer-image">
+                        </div>
+                        <canvas id='wheel' width="400" height="400"
+                                data-responsiveMinWidth="300"
+                                data-responsiveMargin="100"
+                                data-responsiveScaleHeight="true" class="canvas__wheel">
+                            Canvas not supported, use another browser.
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div class="modal" tabindex="-1" id="modal">
+    <div class="modal-dialog modal-dialog-centered justify-content-center">
+        <div class="modal-content modal-bg modal__link-size">
+            <div class="modal-body text-center d-flex flex-column align-items-center justify-content-center">
+                <h5 class="modal-title modal-title-link ff-roboto-500">
+                    Congratulations!
+                </h5>
+                <p class="modal-subtitle ff-roboto-normal">Your link</p>
+
+                <div class="link__block link__block-mb">
+                    <span class="link__text ff-roboto-normal">ftp://pgu/directory/library</span>
+                    <div class="link__copy-block-img">
+                        <img src="images/copy.svg" alt="" class="link__copy-img">
+                    </div>
+
+                    <!-- TODO Показать плашку сохранения добавить класс saved__block-show -->
+                    <div class="saved__block saved__block-show">
+                        <span class="saved__text">Saved</span>
+                        <div class="saved__img-block ">
+                            <img src="images/done.svg" alt="" class="saved__img">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="main__button modal__btn ff-baloo-600" data-bs-dismiss="modal">Save Link</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<!-- / Bootstrap js-->
+<script src="js/TweenMax.min.js"></script>
+<script src="js/Winwheel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
