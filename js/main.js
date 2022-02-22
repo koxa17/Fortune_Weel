@@ -33,7 +33,7 @@ if (canvasWheel) {
             'responsive': true,
             'fillStyle': '#e7706f',
             'lineWidth': 1,
-            'textFontSize': 12,
+            'textFontSize': 16,
             'numSegments': 8,
             'outerRadius': 196,
             'segments':

@@ -54,7 +54,6 @@ a, a:hover {
 }
 
 
-
 a:hover, a:active {
     color: var(--color-active-link);
     text-decoration: underline var(--color-active-link);
@@ -122,7 +121,6 @@ a:hover, a:active {
 }
 
 
-
 /* <HEADER>*/
 
 .header__container {
@@ -142,6 +140,12 @@ a:hover, a:active {
     background: linear-gradient(90deg, #DDA514 0%, #D9498E 100%, #CB3B80 100%);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .header__button {
+        font-size: 16px;
+    }
 }
 
 
@@ -192,8 +196,6 @@ a:hover, a:active {
         height: 51px;
     }
 }
-
-
 
 
 /* <БУРГЕР МЕНЮ>  */
@@ -351,9 +353,6 @@ body.modal-open .overlay-main {
     }
 }
 
-.loader {
-    display: none;
-}
 
 .main.load .loader {
     display: flex;
@@ -366,10 +365,61 @@ body.modal-open .overlay-main {
     justify-content: center;
 }
 
-.loader img.loader-img {
+.loader {
+    display: flex;
+}
+
+.lds-ring {
+    display: none;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.main.load .lds-ring {
+    display: inline-block;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
     width: 46px;
-    height: 44px;
-    filter: invert(45%) sepia(14%) saturate(1279%) hue-rotate(233deg) brightness(90%) contrast(86%);
+    height: 46px;
+    margin: 8px;
+    border: 4px solid #9d74b7;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #9d74b7 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .lds-ring div {
+        width: 66px;
+        height: 66px;
+    }
 }
 
 .main.load .wrapper-content {
@@ -447,15 +497,30 @@ a.menu__item__link {
 }
 
 /* </ Скрытое меню для мобильного > */
+
 .main .title {
     font-size: 35px;
     line-height: 55px;
+}
+
+@media (min-width: 768px) {
+    .main .title {
+        font-size: 50px;
+        line-height: 79px;
+    }
 }
 
 .main .subtitle {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .main .subtitle {
+        font-size: 20px;
+        line-height: 31px;
+    }
 }
 
 .btn__load-img {
@@ -494,6 +559,14 @@ a.menu__item__link {
     cursor: pointer;
 }
 
+@media (min-width: 768px) {
+    .main__button {
+        font-size: 20px;
+        line-height: 31px;
+        padding: 12px 92px;
+    }
+}
+
 /* <Wheel> */
 
 .wheel__block {
@@ -512,6 +585,12 @@ a.menu__item__link {
 
 .wheel__block-mt {
     margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .wheel__block-mt {
+        margin-top: 43px;
+    }
 }
 
 .wheel__border-circle {
@@ -560,7 +639,6 @@ a.menu__item__link {
         top: -22px;
     }
 }
-
 
 
 .wheel__prize-pointer img.wheel__prize-pointer-image {
@@ -625,8 +703,8 @@ a.menu__item__link {
     line-height: 38px;
 }
 
-.segments__block{
-   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+.segments__block {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
 .segments__block-mb {
@@ -639,7 +717,7 @@ ul.segments__list {
     padding: 0;
 }
 
-ul.segments__list__admin .segments__item-number .segments__item-color{
+ul.segments__list__admin .segments__item-number .segments__item-color {
     width: 13px;
     height: 15px;
     position: absolute;
@@ -659,17 +737,17 @@ ul.segments__list li.segments__item:first-child div.segments__item-number {
     border-radius: 15px 0 0 0;
 }
 
-ul.segments__list li.segments__item:first-child div.segments__item-text{
+ul.segments__list li.segments__item:first-child div.segments__item-text {
     -moz-border-radius-topright: 15px;
     border-radius: 0 15px 0 0;
 }
 
-ul.segments__list li.segments__item:last-child div.segments__item-number{
+ul.segments__list li.segments__item:last-child div.segments__item-number {
     -moz-border-radius-bottomleft: 15px;
     border-radius: 0 0 0 15px;
 }
 
-ul.segments__list li.segments__item:last-child div.segments__item-text{
+ul.segments__list li.segments__item:last-child div.segments__item-text {
     -moz-border-radius-bottomright: 15px;
     border-radius: 0 0 15px 0;
 }
@@ -688,14 +766,14 @@ li.segments__item .segments__item-number {
     position: relative;
 }
 
-li.segments__item .segments__item-text{
+li.segments__item .segments__item-text {
     font-size: 16px;
     line-height: 19px;
     color: rgba(255, 255, 255, 0.3);
     padding: 6px 14px;
 }
 
-li.segments__item:hover .segments__item-text{
+li.segments__item:hover .segments__item-text {
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
 }
@@ -773,13 +851,13 @@ li.segments__item:hover .segments__item-text{
     margin-bottom: 24px;
 }
 
-.link__block .link__text{
+.link__block .link__text {
     font-size: 14px;
     line-height: 16px;
 }
 
 
-.link__copy-block-img{
+.link__copy-block-img {
     position: absolute;
     width: 13px;
     height: 13px;
@@ -797,7 +875,7 @@ li.segments__item:hover .segments__item-text{
     cursor: pointer;
 }
 
-.link__copy-block-img{
+.link__copy-block-img {
     top: 0;
     right: 7px;
     z-index: 2;
@@ -820,7 +898,7 @@ li.segments__item:hover .segments__item-text{
     display: flex;
 }
 
-.saved__block .saved__text  {
+.saved__block .saved__text {
     color: white;
     margin-right: 5px;
 }
@@ -828,6 +906,7 @@ li.segments__item:hover .segments__item-text{
 .saved__block .saved__img-block {
 
 }
+
 /* / Модальное окно */
 
 /*---------------------------------  / PAGE CREATE ---------------------------------------------*/
@@ -848,8 +927,7 @@ li.segments__item:hover .segments__item-text{
 }
 
 
-
-.section__description p.paragraph{
+.section__description p.paragraph {
     margin-bottom: 0;
 }
 
@@ -874,7 +952,7 @@ li.segments__item:hover .segments__item-text{
 }
 
 .wheels-table-content .table {
-    width:100%;
+    width: 100%;
     table-layout: fixed;
     text-align: center;
     margin-bottom: 0;
@@ -901,7 +979,7 @@ li.segments__item:hover .segments__item-text{
 }
 
 
-.table tr td:first-child div.table__link{
+.table tr td:first-child div.table__link {
     color: rgba(255, 255, 255, 0.3);
     font-size: 12px;
     line-height: 14px;
@@ -917,7 +995,7 @@ li.segments__item:hover .segments__item-text{
     line-height: 18px;
 }
 
-tbody tr:last-child{
+tbody tr:last-child {
     border-bottom: none;
 }
 
@@ -1057,11 +1135,7 @@ input.search__input:-ms-input-placeholder {
 }
 
 
-
-
 /*---------------------------------  / PAGE CREATE-ADMIN  ---------------------------------------------*/
-
-
 
 
 /*@media (min-width: 576px) {*/
