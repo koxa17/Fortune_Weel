@@ -30,6 +30,7 @@
     <div class="container header__container">
         <div class="row">
             <div class="col-12 d-flex align-items-center">
+
                 <div class="burger__menu burger__menu--mr">
                     <div class="burger__menu__line burger__line_top burger__line-none"></div>
                     <div class="burger__menu__line burger__line_first"></div>
@@ -43,9 +44,21 @@
                     </a>
                 </div>
 
-                <button class="header__button ff-baloo-600 header__button--right">
-                    Create a wheel
-                </button>
+                <div class="header__right header__right-ml">
+                    <nav>
+                        <ul class="header__menu__list ff-baloo-normal">
+                            <li class="header__menu__list__item">
+                                <a href="about.html" class="header__menu__list__item__link">About</a>
+                            </li>
+                            <li class="header__menu__list__item">
+                                <a href="fq.html.html" class="header__menu__list__item__link">F&Q</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__button ff-baloo-600 header__button--right">
+                        Create a wheel
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -56,6 +69,8 @@
 <main class="main text-center">
     <div class="main__bg main__bg-left"></div>
     <div class="main__bg main__bg-right"></div>
+    <div class="main__bg-bottom"></div>
+
     <div class="loader">
         <img src="images/btn-loader.svg" alt="Load" class="loader-img">
     </div>
@@ -117,9 +132,9 @@
         </div>
 
         <div class="container-fluid">
-            <div class="row d-flex align-items-center">
-                <div class="col-12">
-                    <div class="wheel__block">
+            <div class="row">
+                <div class="col-12 d-flex flex-column align-items-center">
+                    <div class="wheel__block wheel__block-mt">
                         <div class="wheel__border-circle"></div>
                         <div class="wheel__prize-pointer">
                             <img src="images/polygon.png" alt="" class="wheel__prize-pointer-image">
