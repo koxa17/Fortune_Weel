@@ -18,6 +18,16 @@ overlayMainSection.addEventListener('click', actionMenu)
 // Колесо
 let canvasWheel = document.querySelector('#wheel');
 if (canvasWheel) {
+    // Крутим колесо
+    let startBtn = document.querySelector('#start-btn')
+    if (startBtn) {
+        function spinningWheel() {
+            return theWheel.startAnimation()
+        }
+
+        startBtn.addEventListener('click', spinningWheel)
+    }
+
     let theWheel = new Winwheel({
             'canvasId': 'wheel',
             'responsive': true,
@@ -47,15 +57,6 @@ if (canvasWheel) {
     );
 }
 
-// Крутим колесо
-let startBtn = document.querySelector('#start-btn')
- if (startBtn) {
-     function spinningWheel() {
-         return theWheel.startAnimation()
-     }
-
-     startBtn.addEventListener('click', spinningWheel)
- }
 
 
 
