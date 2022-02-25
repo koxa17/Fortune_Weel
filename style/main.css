@@ -1137,10 +1137,25 @@ li.segments__item:hover .segments__item-text {
     margin-bottom: 24px;
 }
 
+@media (min-width: 768px) {
+    .section__title {
+        font-size: 60px;
+        line-height: 94px;
+        margin-bottom: 30px;
+    }
+}
+
 .section__description {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .section__description {
+        font-size: 26px;
+        line-height: 41px;
+    }
 }
 
 
