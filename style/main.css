@@ -634,11 +634,23 @@ button .button__loader {
     padding: 43% 43%;
 }
 
+@media (min-width: 768px) {
+    .wheel__border-circle {
+
+    }
+}
+
 
 .canvas__wheel {
     display: block;
     margin: 0 auto;
     z-index: 2;
+}
+
+@media (min-width: 768px) {
+    .canvas__wheel {
+        width: 80%;
+    }
 }
 
 
@@ -668,6 +680,30 @@ button .button__loader {
 @media (min-width: 450px) {
     .wheel__prize-pointer {
         top: -22px;
+    }
+}
+
+@media (min-width: 768px){
+    .wheel__prize-pointer {
+        top: 5px;
+    }
+}
+
+@media (min-width: 852px){
+    .wheel__prize-pointer {
+        top: -7px;
+    }
+}
+
+@media (min-width: 906px){
+    .wheel__prize-pointer {
+        top: -17px;
+    }
+}
+
+@media (min-width: 952px){
+    .wheel__prize-pointer {
+        top: -24px;
     }
 }
 
@@ -776,6 +812,13 @@ button .button__loader {
     line-height: 38px;
 }
 
+@media (min-width: 768px) {
+    .create-title {
+        font-size: 30px;
+        line-height: 47px;
+    }
+}
+
 .segments__block {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
@@ -839,11 +882,26 @@ li.segments__item .segments__item-number {
     position: relative;
 }
 
+@media (min-width: 768px) {
+    li.segments__item .segments__item-number {
+        font-size: 28px;
+        line-height: 33px;
+    }
+}
+
 li.segments__item .segments__item-text {
     font-size: 16px;
     line-height: 19px;
     color: rgba(255, 255, 255, 0.3);
     padding: 6px 14px;
+}
+
+
+@media (min-width: 768px) {
+    li.segments__item .segments__item-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
 }
 
 li.segments__item:hover .segments__item-text {
@@ -854,6 +912,13 @@ li.segments__item:hover .segments__item-text {
 .create__add-btn {
     padding: 8px 27px;
     border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+    .create__add-btn {
+        font-size: 20px;
+        line-height: 23px;
+    }
 }
 
 .inputs__number__block-mb {
@@ -871,6 +936,15 @@ li.segments__item:hover .segments__item-text {
     height: 50px;
     background: none;
     color: white;
+}
+
+@media (min-width: 768px) {
+    .number__spins {
+        font-size: 28px;
+        line-height: 33px;
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .number__spins::-webkit-input-placeholder {
@@ -896,6 +970,13 @@ li.segments__item:hover .segments__item-text {
 .number__spins-text {
     font-size: 16px;
     line-height: 19px;
+}
+
+@media (min-width: 768px) {
+    .number__spins-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 
 
@@ -939,7 +1020,6 @@ li.segments__item:hover .segments__item-text {
     .link__block {
         font-size: 18px;
         line-height: 21px;
-        padding: 18px 48px;
         padding: 18px 48px;
     }
 }
