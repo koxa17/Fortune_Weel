@@ -1319,6 +1319,10 @@ input.search__input:-ms-input-placeholder {
     margin-bottom: 42px;
 }
 
+.wrapper-position {
+    position: relative;
+}
+
 .create-link .link__block {
     background: var(--modal-bg-link-block);
     color: rgba(255, 255, 255, 0.3);
@@ -1333,6 +1337,14 @@ input.search__input:-ms-input-placeholder {
 
 }
 
+@media (min-width: 768px) {
+
+    .create-link .link__block {
+        width: 200px;
+    }
+
+}
+
 .link__block-mr {
     margin-right: 18px;
 }
@@ -1341,6 +1353,10 @@ input.search__input:-ms-input-placeholder {
 .create-link__button {
     font-size: 16px;
     line-height: 19px;
+}
+
+@media (min-width: 768px) {
+
 }
 
 .create-link__button__link {
