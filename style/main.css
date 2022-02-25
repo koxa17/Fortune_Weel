@@ -1156,6 +1156,10 @@ li.segments__item:hover .segments__item-text {
         font-size: 26px;
         line-height: 41px;
     }
+
+    .fq-content .section__description {
+        margin-bottom: 45px;
+    }
 }
 
 
