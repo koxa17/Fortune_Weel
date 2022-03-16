@@ -1410,9 +1410,11 @@ li.segments__item:hover .segments__item-text {
 @media (min-width: 1024px) {
     .wheels-table-content {
         height: 354px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
-
 
 .wheels-table-content .table {
     width: 100%;

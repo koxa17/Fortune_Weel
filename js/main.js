@@ -68,7 +68,7 @@ let modal = document.querySelector('#modal')
 if(modal) {
     const modalBottstrap = new bootstrap.Modal(modal);
     // Показать модалку, ниже функция и добавить класс open-modal к тегу body
-    // modalBottstrap.show();
+    modalBottstrap.show();
 }
 
 
