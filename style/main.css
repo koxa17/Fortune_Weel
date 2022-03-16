@@ -305,7 +305,7 @@ a:hover, a:active {
 
 /* </HEADER>*/
 .overlay-main {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -376,6 +376,32 @@ body.modal-open .overlay-main {
 
     .main__bg-bottom {
         background: url("../images/bg/md/image-bot.svg") no-repeat center / cover;
+        bottom: 0;
+        position: absolute;
+        height: 810px;
+        right: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main__bg-right {
+        background: url("../images/bg/xl/image-right.svg") no-repeat center / cover;
+        width: 480px;
+        height: 100%;
+        bottom: 0;
+    }
+
+    .main__bg-left {
+        background: url("../images/bg/xl/image-left.svg") no-repeat center /cover;
+        width: 535px;
+        height: 100%;
+        bottom: 0;
+    }
+
+    .main__bg-bottom {
+        background: url("../images/bg/xl/image-bot.svg") no-repeat center / cover;
         bottom: 0;
         position: absolute;
         height: 810px;
