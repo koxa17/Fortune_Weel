@@ -840,6 +840,13 @@ button .button__loader {
     }
 }
 
+@media (min-width: 1920px) {
+    .modal-bg{
+        width: 437px;
+        height: 490px;
+    }
+}
+
 .modal-body {
     display: inline-flex;
     flex-direction: column;
@@ -854,7 +861,6 @@ button .button__loader {
     }
 }
 
-
 .modal-title {
     font-size: 20px;
     line-height: 23px;
@@ -866,6 +872,14 @@ button .button__loader {
         font-size: 28px;
         line-height: 33px;
         margin-bottom: 17px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .modal-title {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 32px;
     }
 }
 
@@ -1142,6 +1156,13 @@ li.segments__item:hover .segments__item-text {
         font-size: 28px;
         line-height: 33px;
         margin-bottom: 37px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-title-link {
+        font-size: 32px;
+        line-height: 38px;
     }
 }
 
