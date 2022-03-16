@@ -1323,13 +1323,25 @@ li.segments__item:hover .segments__item-text {
     padding: 6px 14px 0 14px;
 }
 
+
+@media (min-width: 1024px) {
+    .wheels-table-content {
+        height: 354px;
+    }
+}
+
+
 .wheels-table-content .table {
     width: 100%;
     table-layout: fixed;
     text-align: center;
     margin-bottom: 0;
+}
 
-
+@media (min-width: 1024px) {
+    .wheels-table-content {
+        margin-top: 102px;
+    }
 }
 
 .table tr.table-head {
@@ -1339,9 +1351,22 @@ li.segments__item:hover .segments__item-text {
     font-weight: normal;
 }
 
+@media (min-width: 1024px) {
+    .table tr.table-head {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
 .table tr td {
     padding: 14px 8px;
     position: relative;
+}
+
+@media (min-width: 1024px) {
+    .table tr td {
+        padding: 18px 8px;
+    }
 }
 
 .text {
