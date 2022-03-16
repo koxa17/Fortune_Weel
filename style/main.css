@@ -798,6 +798,14 @@ button .button__loader {
     justify-content: center;
 }
 
+@media (min-width: 768px) {
+    .modal-body {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+}
+
+
 .modal-title {
     font-size: 20px;
     line-height: 23px;
@@ -1105,6 +1113,13 @@ li.segments__item:hover .segments__item-text {
     }
 }
 
+@media (min-width: 768px) {
+    .link__block {
+        padding: 18px 48px;
+        width: 100%;
+    }
+}
+
 .modal-body .link__block-mb {
     margin-bottom: 24px;
 }
@@ -1119,9 +1134,36 @@ li.segments__item:hover .segments__item-text {
     padding: 14px 44px;
 }
 
+@media (min-width: 1024px) {
+    .modal-body-save-link .modal__btn {
+        padding: 16px 97px;
+    }
+}
+
+
 .link__block .link__text {
     font-size: 14px;
     line-height: 16px;
+}
+
+@media (min-width: 768px) {
+    .link__block .link__text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .create-link-block .link__block .link__text{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .link__block .link__text {
+        font-weight: 500;
+    }
+
 }
 
 
@@ -1188,6 +1230,13 @@ li.segments__item:hover .segments__item-text {
         padding: 10px 17px 10px 17px;
         font-size: 16px;
         line-height: 19px;
+    }
+}
+
+@media (min-width: 1024px){
+    .saved__block {
+        padding: 13px 17px 20px 17px;
+        top: -40px;
     }
 }
 
