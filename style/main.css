@@ -1389,6 +1389,41 @@ input.search__input:-ms-input-placeholder {
 
 /*---------------------------------  / PAGE CREATE-ADMIN  ---------------------------------------------*/
 
+/* СТИЛИ для скролл бара */
+.wheels-table-content::-webkit-scrollbar {
+    width: 5px;
+}
+.wheels-table-content::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+.wheels-table-content::-webkit-scrollbar-thumb {
+    background: #6d5781;
+    border: 0px none #330e4b;
+    border-radius: 50px;
+}
+.wheels-table-content::-webkit-scrollbar-thumb:hover {
+    background: #330e4b;
+}
+.wheels-table-content::-webkit-scrollbar-thumb:active {
+    background: #6d5781;
+}
+.wheels-table-content::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+.wheels-table-content::-webkit-scrollbar-track:hover {
+    background: #330e4b;
+}
+.wheels-table-content::-webkit-scrollbar-track:active {
+    background: #330e4b;
+}
+.wheels-table-content::-webkit-scrollbar-corner {
+    background: transparent;
+}
+/* / СТИЛИ для скролл бара */
+
 
 /*@media (min-width: 576px) {*/
 
