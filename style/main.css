@@ -162,6 +162,14 @@ a:hover, a:active {
         font-size: 16px;
         min-height: 41px;
         min-width: 158px;
+        padding: 11px 27px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__button {
+        padding: 20px 35px;
+        font-size: 20px;
     }
 }
 
@@ -195,25 +203,21 @@ a:hover, a:active {
 
 }
 
-.header__menu__list__item {
-    margin-right: 40px;
-}
-
 @media (min-width: 768px) {
     .header__menu__list {
         display: flex;
     }
+}
 
-    .header__button {
-        padding: 11px 27px;
-    }
-
-    .logo {
-        width: 143px;
-        height: 51px;
+@media (min-width: 768px) {
+    .header__menu__list {
+        font-size: 20px;
     }
 }
 
+.header__menu__list__item {
+    margin-right: 40px;
+}
 
 /* <БУРГЕР МЕНЮ>  */
 
@@ -275,6 +279,13 @@ a:hover, a:active {
 .logo {
     width: 95px;
     height: 33px;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 143px;
+        height: 51px;
+    }
 }
 
 .logo .logo__img {
@@ -447,6 +458,16 @@ body.modal-open .overlay-main {
     display: block;
 }
 
+@media (min-width: 1024px) {
+    .wrapper-content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+
 
 /* < Скрытое меню для мобильного > */
 
@@ -527,6 +548,13 @@ a.menu__item__link {
     }
 }
 
+@media (min-width: 1024px) {
+    .main .title {
+        font-size: 60px;
+        line-height: 94px;
+    }
+}
+
 .main .subtitle {
     font-size: 16px;
     line-height: 25px;
@@ -537,6 +565,13 @@ a.menu__item__link {
     .main .subtitle {
         font-size: 20px;
         line-height: 31px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main .subtitle {
+        font-size: 24px;
+        line-height: 38px;
     }
 }
 
@@ -594,6 +629,14 @@ button .button__loader {
     .main__button {
         font-size: 20px;
         line-height: 31px;
+        padding: 12px 92px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main__button {
+        font-size: 24px;
+        line-height: 38px;
         padding: 12px 92px;
     }
 }
@@ -782,6 +825,14 @@ button .button__loader {
     }
 }
 
+@media (min-width: 768px) {
+    .modal-subtitle {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+}
+
 .prize__name {
     font-size: 14px;
     line-height: 16px;
@@ -797,6 +848,14 @@ button .button__loader {
     }
 }
 
+@media (min-width: 768px) {
+    .prize__name {
+        font-size: 20px;
+        line-height: 23px;
+        padding: 16px 55px;
+    }
+}
+
 .modal-description {
     margin: 27px 0 23px 0;
     font-size: 14px;
@@ -808,6 +867,14 @@ button .button__loader {
         font-size: 16px;
         line-height: 19px;
         margin: 24px 0 36px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-description {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 42px 0 35px 0;
     }
 }
 
