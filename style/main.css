@@ -649,7 +649,7 @@ button .button__loader {
 
 @media (min-width: 768px) {
     .canvas__wheel {
-        width: 80%;
+        width: 85%;
     }
 }
 
@@ -684,14 +684,20 @@ button .button__loader {
 }
 
 @media (min-width: 768px){
-    .wheel__prize-pointer {
-        top: 5px;
+    .create .wheel__prize-pointer {
+        top: 10px;
+    }
+}
+
+@media (min-width: 852px){
+    .create .wheel__prize-pointer {
+        top: -5px;
     }
 }
 
 @media (min-width: 852px){
     .wheel__prize-pointer {
-        top: -7px;
+        top: -23px;
     }
 }
 
@@ -701,9 +707,15 @@ button .button__loader {
     }
 }
 
+@media (min-width: 906px){
+    .create .wheel__prize-pointer {
+        top: -17px;
+    }
+}
+
 @media (min-width: 952px){
     .wheel__prize-pointer {
-        top: -24px;
+        top: -15px;
     }
 }
 
