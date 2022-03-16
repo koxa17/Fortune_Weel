@@ -170,6 +170,7 @@ a:hover, a:active {
     .header__button {
         padding: 20px 35px;
         font-size: 20px;
+        border-radius: 15px;
     }
 }
 
@@ -677,9 +678,9 @@ button .button__loader {
     padding: 43% 43%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .wheel__border-circle {
-
+        border: 25px solid var(--wheel-border-color);
     }
 }
 
@@ -1049,6 +1050,7 @@ li.segments__item:hover .segments__item-text {
 .number__spins-text {
     font-size: 16px;
     line-height: 19px;
+    margin-bottom: 18px;
 }
 
 @media (min-width: 768px) {
@@ -1453,16 +1455,19 @@ input.search__input:-ms-input-placeholder {
     line-height: 19px;
 }
 
-@media (min-width: 768px) {
-
-}
-
 .create-link__button__link {
     text-decoration-line: underline;
 }
 
 .create-admin__button {
     padding: 11px 27px;
+}
+
+@media (min-width: 1024px) {
+    .create-admin__button {
+        padding: 15px 35px;
+        border-radius: 15px;
+    }
 }
 
 
