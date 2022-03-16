@@ -338,6 +338,7 @@ body.modal-open .overlay-main {
     flex-grow: 1;
 }
 
+
 .main__bg {
     position: absolute;
     width: 197px;
@@ -1330,6 +1331,11 @@ li.segments__item:hover .segments__item-text {
 
 /*---------------------------------    PAGE ABOUT ---------------------------------------------*/
 
+@media (min-width: 1920px) {
+    .main.about, .main.fq {
+        padding-top: 80px;
+    }
+}
 
 .section__title {
     font-size: 35px;
@@ -1348,6 +1354,13 @@ li.segments__item:hover .segments__item-text {
 @media (min-width: 1024px) {
     .section__title {
         font-weight: 800;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section__title {
+        font-size: 70px;
+        line-height: 110px;
     }
 }
 
