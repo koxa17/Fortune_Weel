@@ -121,53 +121,56 @@
         </nav>
     </div>
 
-    <div class="wrapper-content">
-        <div class="container">
+    <div class="container h-100">
+        <div class="wrapper-content">
+            <div class="container container-lg-fluid">
 
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="title ff-baloo-800 mb-0">Text greeting</h1>
-                    <p class="subtitle">Text greeting text greeting</p>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title ff-baloo-800 mb-0">Text greeting</h1>
+                        <p class="subtitle">Text greeting text greeting</p>
+                    </div>
                 </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <button class="main__button main__button-mb" id="start-btn">
+                            <span class="ff-baloo-600 text-uppercase">start</span>
+
+                            <div class="lds-ring button__loader">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <button class="main__button main__button-mb" id="start-btn">
-                        <span class="ff-baloo-600 text-uppercase">start</span>
-
-                        <div class="lds-ring button__loader">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <div class="wheel__block wheel__block-mt">
+                            <div class="wheel__border-circle"></div>
+                            <div class="wheel__prize-pointer">
+                                <img src="images/polygon.png" alt="" class="wheel__prize-pointer-image">
+                            </div>
+                            <canvas id='wheel' width="400" height="400"
+                                    data-responsiveMinWidth="300"
+                                    data-responsiveMargin="100"
+                                    data-responsiveScaleHeight="true" class="canvas__wheel">
+                                Canvas not supported, use another browser.
+                            </canvas>
                         </div>
-
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 d-flex flex-column align-items-center">
-                    <div class="wheel__block wheel__block-mt">
-                        <div class="wheel__border-circle"></div>
-                        <div class="wheel__prize-pointer">
-                            <img src="images/polygon.png" alt="" class="wheel__prize-pointer-image">
-                        </div>
-                        <canvas id='wheel' width="400" height="400"
-                                data-responsiveMinWidth="300"
-                                data-responsiveMargin="100"
-                                data-responsiveScaleHeight="true" class="canvas__wheel">
-                            Canvas not supported, use another browser.
-                        </canvas>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </main>
 
 <div class="modal" tabindex="-1" id="modal">

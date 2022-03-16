@@ -110,6 +110,7 @@ a:hover, a:active {
 
 .container {
     padding: 0 30px;
+    max-width: 1200px;
 }
 
 .relative {
@@ -289,17 +290,18 @@ a:hover, a:active {
     }
 }
 
+@media (min-width: 1920px) {
+    .logo {
+        width: 167px;
+        height: 59px;
+    }
+}
+
 .logo .logo__img {
     width: 100%;
     height: 100%;
 }
 
-@media (min-width: 768px) {
-    .logo {
-        width: 143px;
-        height: 51px;
-    }
-}
 
 /* </HEADER>*/
 .overlay-main {
@@ -556,6 +558,13 @@ a.menu__item__link {
     }
 }
 
+@media (min-width: 1980px) {
+    .main .title {
+        font-size: 70px;
+        line-height: 110px;
+    }
+}
+
 .main .subtitle {
     font-size: 16px;
     line-height: 25px;
@@ -573,6 +582,13 @@ a.menu__item__link {
     .main .subtitle {
         font-size: 24px;
         line-height: 38px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .main .subtitle {
+        font-size: 26px;
+        line-height: 41px;
     }
 }
 
@@ -684,6 +700,13 @@ button .button__loader {
     }
 }
 
+@media (min-width: 1920px) {
+    .wheel__border-circle {
+        border: 30px solid var(--wheel-border-color);
+        padding: 50% 50%;
+    }
+}
+
 
 .canvas__wheel {
     display: block;
@@ -691,9 +714,21 @@ button .button__loader {
     z-index: 2;
 }
 
+@media (min-width: 415px) {
+    .canvas__wheel {
+        width: 85%;
+    }
+}
+
 @media (min-width: 768px) {
     .canvas__wheel {
         width: 85%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .canvas__wheel {
+        width: 98%;
     }
 }
 
@@ -757,9 +792,23 @@ button .button__loader {
     }
 }
 
+@media (min-width: 1920px){
+    .create .wheel__prize-pointer {
+        top: -30px;
+    }
+}
+
 @media (min-width: 952px){
     .wheel__prize-pointer {
         top: -15px;
+    }
+}
+
+@media (min-width: 1920px){
+    .wheel__prize-pointer {
+        width: 96px;
+        height: 96px;
+        top: -30px;
     }
 }
 
