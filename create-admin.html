@@ -157,48 +157,13 @@
                     <div class="col-12">
                         <div class="segments__block segments__block-mb">
                             <ul class="segments__list segments__list__admin ff-roboto-normal">
-                                <li class="segments__item">
-                                    <div class="segments__item-number">
-                                        1
-                                        <div class="segments__item-color"></div>
-                                    </div>
-                                    <input type="text" class="segments__item-text" placeholder="Title title title">
-                                </li>
-                                <li class="segments__item">
-                                    <div class="segments__item-number">
-                                        2
-                                        <div class="segments__item-color"></div>
-                                    </div>
-                                    <input type="text" class="segments__item-text" placeholder="Title title title">
-                                </li>
-                                <li class="segments__item">
-                                    <div class="segments__item-number">
-                                        3
-                                        <div class="segments__item-color"></div>
-                                    </div>
-                                    <input type="text" class="segments__item-text" placeholder="Title title title">
-                                </li>
-                                <li class="segments__item">
-                                    <div class="segments__item-number">
-                                        4
-                                        <div class="segments__item-color"></div>
-                                    </div>
-                                    <input type="text" class="segments__item-text" placeholder="Title title title">
-                                </li>
-                                <li class="segments__item">
-                                    <div class="segments__item-number">
-                                        5
-                                        <div class="segments__item-color"></div>
-                                    </div>
-                                    <input type="text" class="segments__item-text" placeholder="Title title title">
-                                </li>
-                                <li class="segments__item">
-                                    <div class="segments__item-number">
-                                        6
-                                        <div class="segments__item-color"></div>
-                                    </div>
-                                    <input type="text" class="segments__item-text" placeholder="Title title title">
-                                </li>
+<!--                                <li class="segments__item">-->
+<!--                                    <div class="segments__item-number">-->
+<!--                                        1-->
+<!--                                        <div class="segments__item-color"></div>-->
+<!--                                    </div>-->
+<!--                                    <input type="text" class="segments__item-text" placeholder="Title title title">-->
+<!--                                </li>-->
                             </ul>
                         </div>
                     </div>
@@ -206,9 +171,14 @@
 
                 <div class="row">
                     <div class="col-4">
-                        <button class="main__button create__add-btn" id="start-btn">
+                        <button class="main__button create__add-btn" id="add-btn" data-admin="admin">
                             <span class="ff-roboto-600">+Add</span>
-                            <img src="images/btn-loader.svg" alt="Load" class="btn__load-img">
+                            <div class="lds-ring button__loader">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </button>
                     </div>
                 </div>
@@ -259,7 +229,13 @@
                 <div class="row">
                     <div class="col">
                         <button class="header__button create-admin__button ff-baloo-600 header__button--right">
-                            Create a wheel
+                            <span>Create a wheel</span>
+                            <div class="lds-ring button__loader">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </button>
                     </div>
                 </div>
@@ -316,14 +292,12 @@
 
                 <button class="main__button main__button-mb ff-baloo-600 modal__btn" data-bs-dismiss="modal">
                     <span class="ff-baloo-600">Save Link</span>
-
                     <div class="lds-ring button__loader">
                         <div></div>
                         <div></div>
                         <div></div>
                         <div></div>
                     </div>
-
                 </button>
             </div>
         </div>

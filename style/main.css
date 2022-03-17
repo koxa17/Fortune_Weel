@@ -145,11 +145,11 @@ a:hover, a:active {
 }
 
 .header__button.load {
-    padding: 5px 11px;
+    position: relative;
 }
 
 .header__button.load span {
-    display: none;
+    opacity: 0;
 }
 
 .header__button:hover {
@@ -637,11 +637,15 @@ a.menu__item__link {
 }
 
 .main__button.load span {
-    display: none;
+    opacity: 0;
 }
 
 button.load .button__loader {
     display: block;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 button .button__loader div {
@@ -1069,6 +1073,9 @@ li.segments__item .segments__item-number {
     line-height: 28px;
     padding: 3px 16px;
     position: relative;
+    max-width: 69px;
+    width: 100%;
+    text-align: center;
 }
 
 @media (min-width: 768px) {

@@ -58,14 +58,12 @@ if (canvasWheel) {
 }
 
 
-
-
-//Для показа загрузки блоку main обаить класс load
+//Для показа загрузки блоку main добавить класс load
 
 
 // Модалка
 let modal = document.querySelector('#modal')
-if(modal) {
+if (modal) {
     const modalBottstrap = new bootstrap.Modal(modal);
     // Показать модалку, ниже функция и добавить класс open-modal к тегу body
     modalBottstrap.show();
@@ -81,9 +79,74 @@ if (segmentsItemsColorBlock) {
     })
 }
 
+const addButton = document.querySelector('#add-btn');
+const segmentsList = document.querySelector('.segments__list');
+const segmentsData = [
+    {
+        id: 1,
+        color: '#FAFD76'
+    },
+    {
+        id: 2,
+        color: '#FFAB08'
+    },
+    {
+        id: 3,
+        color: '#53C5DE'
+    },
+    {
+        id: 4,
+        color: '#FB3695'
+    },
+    {
+        id: 5,
+        color: '#F9D32C'
+    },
+    {
+        id: 6,
+        color: '#69D674'
+    },
+]
+
+function createHtmlElement(id, color) {
+    const li = document.createElement('li')
+    li.className = 'segments__item'
+    const div = document.createElement('div')
+    div.className = 'segments__item-number'
+    div.textContent = id
+
+    if (color) {
+        const divColorBlock = document.createElement('div')
+        divColorBlock.className = 'segments__item-color'
+        divColorBlock.style.backgroundColor = color
+        div.append(divColorBlock)
+    }
+    const inputField = document.createElement('input')
+    inputField.setAttribute('type', 'text')
+    inputField.className = 'segments__item-text'
+    inputField.placeholder = 'Title title title'
+
+    li.append(div)
+    li.append(inputField)
+    return li
+}
 
 document.addEventListener("DOMContentLoaded", function () {
-
+    segmentsData.forEach(item => {
+        segmentsList.append(createHtmlElement(item.id, item.color))
+    })
 });
 
+addButton.addEventListener('click', function () {
+    const isAdmin = this.getAttribute('data-admin')
+    const lastLiItem = segmentsList.getElementsByTagName('li')
+    const lastId = lastLiItem[lastLiItem.length - 1].querySelector('.segments__item-number').textContent
+    if(isAdmin) {
+        segmentsList.append(createHtmlElement(Number(lastId) + 1, '#fff'));
+    } else {
+        segmentsList.append(createHtmlElement(Number(lastId) + 1));
+    }
 
+
+
+})
