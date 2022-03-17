@@ -1083,8 +1083,18 @@ li.segments__item .segments__item-text {
     line-height: 19px;
     color: rgba(255, 255, 255, 0.3);
     padding: 6px 14px;
+    width: 100%;
+    background: inherit;
+    border: none;
 }
 
+li.segments__item .segments__item-text:focus {
+    color: white;
+}
+
+li.segments__item .segments__item-text::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
 
 @media (min-width: 768px) {
     li.segments__item .segments__item-text {
