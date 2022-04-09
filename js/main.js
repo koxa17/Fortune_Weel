@@ -60,7 +60,6 @@ if (canvasWheel) {
 
 //Для показа загрузки блоку main добавить класс load
 
-
 // Модалка
 let modal = document.querySelector('#modal')
 if (modal) {
@@ -146,7 +145,4 @@ addButton.addEventListener('click', function () {
     } else {
         segmentsList.append(createHtmlElement(Number(lastId) + 1));
     }
-
-
-
 })
